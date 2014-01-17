@@ -16,6 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Dashboard -->
+    <string name="header_category_custom">Personalize</string>
+    <string name="supersu_title">SuperSU</string>
+
     <!-- Nougat version -->
     <string name="nougat_version">Nougat version</string>
     <string name="nougat_version_default">Unknown</string>
