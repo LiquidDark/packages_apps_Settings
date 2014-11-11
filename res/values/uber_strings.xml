@@ -17,7 +17,7 @@
 
     <!-- Liquid build date-->
     <string name="build_date">Liquid build date</string>
-    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="build_date_default">Unknown</string>
 
     <!-- UBER Compiler -->
     <string name="build_compiler_gcc">GCC version</string>
@@ -51,7 +51,7 @@
     <string name="supersu_title">SuperSU</string>
 
     <!-- Our advanced settings category title -->
-    <string name="advanced_settings_title">Advanced settings</string>
+    <string name="advanced_settings_title">Liquid settings</string>
     <string name="header_category_advanced">Advanced</string>
 </resources>
 
