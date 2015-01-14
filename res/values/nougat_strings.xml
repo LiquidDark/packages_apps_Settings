@@ -52,4 +52,14 @@
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
+    <!-- UBER GCC version info -->
+    <string name="uber_android">GCC android</string>
+    <string name="uber_android_default">Unknown</string>
+    <string name="uber_kernel">GCC kernel</string>
+    <string name="uber_kernel_default">Unknown</string>
+
+    <!-- UBER GCC build flags info -->
+    <string name="uber_flags">Optimizations</string>
+    <string name="uber_flags_default">None</string>
+
 </resources>
