@@ -60,14 +60,14 @@
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/model_number"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
 
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/firmware_version"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
@@ -82,21 +82,21 @@
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/fcc_equipment_id"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
 
         <!-- Device Baseband version -->
         <Preference android:key="baseband_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/baseband_version"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
 
         <!-- Device Kernel version -->
         <Preference android:key="kernel_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/kernel_version"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
 
         <!-- Vendor Version -->
         <Preference android:key="vendor_version"
@@ -110,14 +110,42 @@
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/device_info_default" />
+
+        <!-- Build date -->
+        <Preference android:key="build_date"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
+
+        <!-- UBER GCC build info -->
+        <Preference android:key="uber_android"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/uber_android"
+                android:summary="@string/uber_android_default" />
+
+        <!-- UBER GCC kernel info -->
+        <Preference android:key="uber_kernel"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/uber_kernel"
+                android:summary="@string/uber_kernel_default" />
+
+        <!-- UBER GCC optimization flags -->
+        <Preference android:key="uber_flags"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/uber_flags"
+                android:summary="@string/uber_flags_default" />
 
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/selinux_status"
-                android:summary="@string/selinux_status_enforcing"/>
+                android:summary="@string/selinux_status_enforcing" />
 
         <!-- UBER build date -->
         <Preference android:key="build_date"
