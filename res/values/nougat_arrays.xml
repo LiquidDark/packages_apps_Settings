@@ -14,18 +14,19 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Changelog -->
-    <string name="changelog_title">Changelog</string>
-    <string name="changelog_summary">See some of the recent commits.</string>
-    <string name="changelog_error">Unable to load changelog</string>
+<resources>
 
     <!-- MediaScanner behavior on boot -->
-    <string name="options_settings_title">Options</string>
-    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
-    <string name="media_scanner_on_boot_enabled">Scan media</string>
-    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
-    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+    <string-array name="media_scanner_on_boot_entries">
+        <item>@string/media_scanner_on_boot_enabled</item>
+        <item>@string/media_scanner_on_boot_ask</item>
+        <item>@string/media_scanner_on_boot_disabled</item>
+    </string-array>
+
+    <string-array name="media_scanner_on_boot_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
 </resources>
