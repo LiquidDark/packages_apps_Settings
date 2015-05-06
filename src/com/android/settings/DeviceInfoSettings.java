@@ -69,7 +69,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_COMPILER_GCC = "build_compiler_gcc";
     private static final String KEY_MOD_BUILD_COMPILER_CLANG = "build_compiler_clang";
     private static final String KEY_VENDOR_VERSION = "vendor_version";
-
+    private static final String KEY_NOUGAT_VERSION = "nougat_version";
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     long[] mHits = new long[3];
@@ -128,7 +128,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setValueSummary(KEY_MOD_BUILD_COMPILER_GCC, "ro.build.uber.gcc");
         setValueSummary(KEY_MOD_BUILD_COMPILER_CLANG, "ro.build.uber.clang");
-
+        setValueSummary(KEY_NOUGAT_VERSION, "ro.nougat.version");
+        findPreference(KEY_NOUGAT_VERSION).setEnabled(true);
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
             setStringSummary(KEY_SELINUX_STATUS, status);
