@@ -46,4 +46,8 @@
     <string name="uber_flags">UBER flags</string>
     <string name="uber_flags_default">None</string>
 
+    <!-- Nougat version -->
+    <string name="nougat_version">Nougat version</string>
+    <string name="nougat_version_default">Unknown</string>
+
 </resources>

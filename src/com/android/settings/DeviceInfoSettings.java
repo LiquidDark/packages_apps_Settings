@@ -73,7 +73,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_UBER_AND = "ro.uber.android";
     private static final String PROPERTY_UBER_KERNEL = "ro.uber.kernel";
     private static final String PROPERTY_UBER_FLAGS = "ro.uber.flags";
-
+    private static final String KEY_NOUGAT_VERSION = "nougat_version";
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     long[] mHits = new long[3];
@@ -133,6 +133,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_UBER_AND, PROPERTY_UBER_AND);
         setValueSummary(KEY_UBER_KERNEL,  PROPERTY_UBER_KERNEL);
         setValueSummary(KEY_UBER_FLAGS, PROPERTY_UBER_FLAGS);
+        setValueSummary(KEY_NOUGAT_VERSION, "ro.nougat.version");
+        findPreference(KEY_NOUGAT_VERSION).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
