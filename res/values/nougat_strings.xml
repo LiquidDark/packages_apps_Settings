@@ -72,4 +72,9 @@
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">See some of the recent commits.</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>
