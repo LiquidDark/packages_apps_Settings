@@ -119,21 +119,21 @@
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
 
-        <!-- UBER GCC build info -->
+        <!-- UBER android info -->
         <Preference android:key="uber_android"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/uber_android"
                 android:summary="@string/uber_android_default" />
 
-        <!-- UBER GCC kernel info -->
+        <!-- UBER kernel info -->
         <Preference android:key="uber_kernel"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/uber_kernel"
                 android:summary="@string/uber_kernel_default" />
 
-        <!-- UBER GCC optimization flags -->
+        <!-- UBER build flags -->
         <Preference android:key="uber_flags"
                 android:enabled="false"
                 android:shouldDisableView="false"
