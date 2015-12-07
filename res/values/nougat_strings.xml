@@ -33,12 +33,17 @@
 
     <!-- UBER GCC version info -->
     <string name="uber_android">GCC android</string>
+
+    <!-- UBER android info -->
+    <string name="uber_android">UBER android</string>
     <string name="uber_android_default">Unknown</string>
-    <string name="uber_kernel">GCC kernel</string>
+
+    <!-- UBER kernel info -->
+    <string name="uber_kernel">UBER kernel</string>
     <string name="uber_kernel_default">Unknown</string>
 
-    <!-- UBER GCC build flags info -->
-    <string name="uber_flags">Optimizations</string>
+    <!-- UBER build flags -->
+    <string name="uber_flags">UBER flags</string>
     <string name="uber_flags_default">None</string>
 
 </resources>
