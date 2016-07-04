@@ -176,6 +176,8 @@
             </intent-filter>
         </activity>
 
+	    <activity android:name=".nougat.Changelog" />
+
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"
