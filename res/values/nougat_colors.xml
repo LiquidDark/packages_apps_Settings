@@ -23,4 +23,8 @@
     <!-- Changelog Colors -->
     <color name="changelog_title_color">@color/theme_accent</color>
 
+    <!-- Dashboard category and tile color --> 
+    <color name="dashboard_category_title_background">@color/card_background</color>
+    <color name="selectable_card_background">@color/card_background</color>
+
 </resources>
