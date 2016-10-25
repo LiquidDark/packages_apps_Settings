@@ -71,9 +71,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_UBER_AND = "uber_android";
     private static final String KEY_UBER_KERNEL = "uber_kernel";
     private static final String KEY_UBER_FLAGS = "uber_flags";
+    private static final String KEY_UBER_CLANG = "uber_clang";
     private static final String PROPERTY_UBER_AND = "ro.uber.android";
     private static final String PROPERTY_UBER_KERNEL = "ro.uber.kernel";
     private static final String PROPERTY_UBER_FLAGS = "ro.uber.flags";
+    private static final String PROPERTY_UBER_CLANG = "ro.uber.clang";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -137,6 +139,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_UBER_AND, PROPERTY_UBER_AND);
         setValueSummary(KEY_UBER_KERNEL,  PROPERTY_UBER_KERNEL);
         setValueSummary(KEY_UBER_FLAGS, PROPERTY_UBER_FLAGS);
+        setValueSummary(KEY_UBER_CLANG, PROPERTY_UBER_CLANG);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -157,6 +160,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 PROPERTY_UBER_KERNEL);
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_FLAGS,
                 PROPERTY_UBER_FLAGS);
+
+        // Remove UBER clang information if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_CLANG,
+                PROPERTY_UBER_CLANG);
 
         // Remove Equipment id preference if FCC ID is not set by RIL
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,

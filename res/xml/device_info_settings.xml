@@ -147,6 +147,13 @@
                 android:title="@string/uber_flags"
                 android:summary="@string/uber_flags_default" />
 
+        <!-- UBER clang info -->
+        <Preference android:key="uber_clang"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/uber_clang"
+                android:summary="@string/uber_clang_default" />
+
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 android:enabled="false"
