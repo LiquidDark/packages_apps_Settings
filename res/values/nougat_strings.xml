@@ -22,7 +22,7 @@
     <string name="supersu_title">SuperSU</string>
 
     <!-- Nougat version -->
-    <string name="nougat_version">Nougat version</string>
+    <string name="nougat_version">Liquid version</string>
     <string name="nougat_version_default">Unknown</string>
 
     <!-- Vendor version -->
