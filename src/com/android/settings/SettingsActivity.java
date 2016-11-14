@@ -1015,13 +1015,13 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
         
         if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
-            Intent subIntent = new Intent();
-            subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
-            startActivity(subIntent);
+            Intent substratumIntent = new Intent();
+            substratumIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(substratumIntent);
             finish();
             return null;
         }
-        
+       
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -1112,11 +1112,11 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
-
-        // Substratum
+            
+        // Remove Substratum if not installed
         boolean subSupported = false;
         try {
-            subSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+            subSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode >= 0);
         } catch (PackageManager.NameNotFoundException e) {
         }
         setTileEnabled(new ComponentName(packageName,
