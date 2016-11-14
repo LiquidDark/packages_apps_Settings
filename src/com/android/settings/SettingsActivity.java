@@ -1013,6 +1013,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+        
         if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
             Intent subIntent = new Intent();
             subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
@@ -1020,6 +1021,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+        
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
