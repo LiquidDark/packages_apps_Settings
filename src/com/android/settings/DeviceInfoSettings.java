@@ -66,6 +66,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
+    private static final String KEY_MOD_BUILD_COMPILER_GCC = "build_compiler_gcc";
+    private static final String KEY_MOD_BUILD_COMPILER_CLANG = "build_compiler_clang";
     private static final String KEY_VENDOR_VERSION = "vendor_version";
     private static final String KEY_UBER_AND = "uber_android";
     private static final String KEY_UBER_KERNEL = "uber_kernel";
@@ -135,6 +137,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_UBER_FLAGS, PROPERTY_UBER_FLAGS);
         setValueSummary(KEY_NOUGAT_VERSION, "ro.nougat.version");
         findPreference(KEY_NOUGAT_VERSION).setEnabled(true);
+        setValueSummary(KEY_MOD_BUILD_COMPILER_GCC, "ro.build.uber.gcc");
+        setValueSummary(KEY_MOD_BUILD_COMPILER_CLANG, "ro.build.uber.clang");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);

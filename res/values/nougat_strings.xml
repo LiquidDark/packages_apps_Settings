@@ -45,10 +45,18 @@
     <!-- UBER build flags -->
     <string name="uber_flags">UBER flags</string>
     <string name="uber_flags_default">None</string>
+    
+    <!-- UBER Compiler -->
+    <string name="build_compiler_gcc">GCC version</string>
+    <string name="build_compiler_default">Unknown</string>
+
+    <!-- UBER Compiler -->
+    <string name="build_compiler_clang">Clang version</string>
+    <string name="build_compiler_default">Unknown</string>    
 
     <!-- Nougat version -->
     <string name="nougat_version">Liquid version</string>
-<string name="nougat_version_default">Unknown</string>
+    <string name="nougat_version_default">Unknown</string>
 
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
