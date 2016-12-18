@@ -21,9 +21,6 @@
     <string name="changelog_summary">See some of the recent commits.</string>
     <string name="changelog_error">Unable to load changelog</string>
 
-    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-    <string name="bluetooth_accept_all_files">Accept all file types</string>
-
     <!-- Nougat version -->
     <string name="nougat_version">Liquid version</string>
 <string name="nougat_version_default">Unknown</string>
