@@ -65,6 +65,14 @@
                 android:key="volume_steps"
                 android:title="@string/volume_steps_title"
                 android:fragment="com.android.settings.nitrogen.VolumeSteps" />
+         
+        <!-- music player on headset connect -->
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="headset_connect_player"
+            android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
 
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
